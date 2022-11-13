@@ -19,14 +19,17 @@ function adjustSlider(e) {
 		thumbSat = 90.4,
 		thumbLight = 44.9,
 		thumbHSL = `${thumbHue},${thumbSat}%,${thumbLight}%`;
-
-	// update the slider shade
+		let txt = document.querySelector('.containerDiv h1');
+	// atualizar a sombra do controle deslizante
 	L.forEach((light,i) => {
 		if (light < 0)
 			light = 0;
 		body.style.setProperty(`--l${i + 1}`,`hsl(228,9.8%,${light}%)`);
+		txt.style.setProperty(`--l${i + 1}`,`hsl(228,9.8%,${light}%)`);
 	});
-	// update the thumb icon hue
+	// atualizar a tonalidade do ícone do polegar
 	body.style.setProperty(`--p`,`hsl(${thumbHSL})`);
 	body.style.setProperty(`--pT`,`hsla(${thumbHSL},0)`);
+	
+	
 }

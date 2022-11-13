@@ -24,15 +24,6 @@ body {
   --p: hsl(120,90.4%,44.9%);
   --pT: hsla(120,90.4%,44.9%,0);
   background-color: var(--l2);
-  height: 100vh;
-}
-
-form, input[type=range] {
-  margin: auto;
-}
-
-form {
-  height: 6em;
 }
 
 input[type=range], label {
@@ -44,7 +35,6 @@ input[type=range] {
   border-radius: 0.75em;
   box-shadow: -0.1em -0.1em 0.1em var(--l3) inset, 0.1em 0.1em 0.1em var(--l1) inset;
   cursor: pointer;
-  /* transform: rotate(-90deg); */
   height: 1.5em;
   width: 6em;
   -webkit-appearance: none;
@@ -88,3 +78,14 @@ label {
   height: 1px;
 }
 
+.containerDiv {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100vw;
+}
+
+.containerDiv div:first-child {
+  width: 100%;
+  text-align: center;
+}/*# sourceMappingURL=index.css.map */

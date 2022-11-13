@@ -40,16 +40,16 @@ body
 	--p: hsl(120,90.4%,44.9%);
 	--pT: hsla(120,90.4%,44.9%,0);
 	background-color: var(--l2);
-	height: 100vh;
+	// height: 100vh;
 }	
-form, input[type=range]
-{
-    margin: auto;
-}
-form
-{
-    height: 6em;
-}
+// form, input[type=range]
+// {
+//     margin: auto;
+// }
+// form
+// {
+//     height: 6em;
+// }
 input[type=range], label
 {
     -webkit-tap-highlight-color: transparent;
@@ -60,7 +60,7 @@ input[type=range]
 	border-radius: 0.75em;
 	box-shadow: -0.1em -0.1em 0.1em var(--l3) inset, 0.1em 0.1em 0.1em var(--l1) inset;
 	cursor: pointer;
-	transform: rotate(-90deg);
+	// transform: rotate(-90deg);
 	height: 1.5em;
 	width: 6em;
 	-webkit-appearance: none;
@@ -91,27 +91,13 @@ label
         width: 1px;
         height: 1px;
     }
-
-	.bola1{
-		height: 200px;
-		width: 200px;
-		border-radius: 50%;
-	
-		background-color: rgb(255, 0, 0);
-	}
-	.bola2{
-		height: 200px;
-		width: 200px;
-	
-		border-radius: 50%;
-	
-		background-color: blue;
-	}
-	.bola3{
-		height: 200px;
-		width: 200px;
-	
-		border-radius: 50%;
-	
-		background-color: green;
-	}
+.containerDiv{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	width: 100vw;
+}
+.containerDiv div:first-child{
+	width: 100%;
+	text-align: center;
+}
